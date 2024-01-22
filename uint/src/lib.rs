@@ -9,6 +9,7 @@
 //! Efficient large, fixed-size big integers and hashes.
 
 #![cfg_attr(not(feature = "std"), no_std)]
+#![cfg_attr(feature = "std", feature(restricted_std))]
 
 #[doc(hidden)]
 pub use byteorder;

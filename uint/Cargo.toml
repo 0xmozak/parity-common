@@ -11,10 +11,10 @@ edition = "2021"
 rust-version = "1.56.1"
 
 [dependencies]
-byteorder = { version = "1.4.2", default-features = false }
-crunchy = { version = "0.2.2", default-features = false }
+hex = { git = "https://github.com/0xmozak/rust-hex", branch="restricted_std", default-features = false }
+crunchy = { git = "https://github.com/0xmozak/crunchy", branch="restricted_std", default-features = false }
 quickcheck = { version = "1", optional = true }
-hex = { version = "0.4", default-features = false }
+byteorder = { git ="https://github.com/0xmozak/byteorder", branch="restricted_std"}
 static_assertions = "1.0.0"
 arbitrary = { version = "1.0", optional = true }
 
